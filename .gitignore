@@ -1,0 +1,23 @@
+# compiled files
+*.css
+*.css.map
+*-min.js
+*.min.js
+static/fonts/eggbox/*
+.sass-cache/
+static/images/eggbox/*
+static/stylesheets/sass/utils/_eggbox.scss
+
+# npm and bower third party libs
+# to be installed win package.json and bower.json
+node_modules/
+npm-debug.log
+static/libs/*
+
+# sassdocs
+static/docs/
+
+# os files
+.DS_Store
+*.swp
+*.ini~
