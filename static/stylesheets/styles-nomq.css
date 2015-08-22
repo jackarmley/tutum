@@ -1482,7 +1482,7 @@ head {
 }
 
 .pagesection-herotext {
-	margin: 0 0 .5em;
+	margin: 0 0 1em;
 	font-size: 4rem;
 	text-align: center;
 }
@@ -1520,6 +1520,26 @@ head {
 .btn--cta {
 	color: white;
 	background-color: #49c014;
+}
+
+.site-header {
+	background-color: #9626d6;
+}
+
+.site-header-inner {
+	width: auto;
+	max-width: 90rem;
+	margin: auto;
+	padding: 3rem;
+}
+
+.site-logo {
+	margin: auto;
+	color: white;
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: lowercase;
+	text-align: center;
 }
 
 /**
