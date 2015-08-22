@@ -1,8 +1,8 @@
 # compiled files
-*.css
+# *.css
 *.css.map
-*-min.js
-*.min.js
+# *-min.js
+# *.min.js
 static/fonts/eggbox/*
 .sass-cache/
 static/images/eggbox/*
