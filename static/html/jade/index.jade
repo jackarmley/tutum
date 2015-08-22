@@ -1,4 +1,45 @@
 extend templates/master
 
+
+mixin section(title)
+    section.pagesection&attributes(attributes)
+        .pagesection-inner
+            -if(title)
+                h1.pagesection-title= title
+            block
+
 block pagecontent
-	include samples/htmlelements
+    +section(class='pagesection--hero')
+        p.pagesection-herotext.
+            We take the stress out of finding the perfect travel insurance
+        .center
+            a.btn.btn--cta Find out more
+    +section('What\'s Tutum?')
+        p.pagesection-intro.
+            We know how stressful and invasive it is to buy travel insurance as
+            we get older. We take on the leg work so you can enjoy your trip.
+            Stick with us If you’re tired of noisy price comparision sites and
+            being rejected!
+    +section('What our clients said')
+        blockquote
+            p.
+                So easy to use, I never felt patronised
+                and Tutum gave me independence
+            cite Mary, Sheffield
+        blockquote
+            p.
+                My son was away so I was left to book everything
+                myself, Tutum took me through everything
+            cite Harry, Barking
+    +section('Pricing')
+        p.pagesection-intro.
+            Tutum is an all inclusive service that gaurentees you insurance
+            for when you travel or your money back, we’re upfront about costs
+            and never hide anything in the small print
+        p.price
+            | Just
+            span 20
+        .center
+            a.btn.btn--cta Get started
+
+

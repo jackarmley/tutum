@@ -20,6 +20,10 @@ $yellow: #FFFB88;
 /// @type Variable
 $red: #aa3025;
 
+/// Tutum
+/// @type Variable
+$tutum: #9626d6;
+
 // A really different color,
 // explicitly for the ie8
 // support message
@@ -29,12 +33,13 @@ $supportmessage: #FFE04E;
 /// Colors map tying usage to variable names
 /// @type Map
 $colors: (
-    default: $black,
+    default: #333,
     black: $black,
     white: $white,
     muted: lighten($black,50%),
     highlight: $yellow,
     link: $red,
+    brand: $tutum,
     linkactive:lighten($red,10%),
     supportmessage: $supportmessage
 );

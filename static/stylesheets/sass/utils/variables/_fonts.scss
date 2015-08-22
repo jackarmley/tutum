@@ -15,7 +15,7 @@ $remsize-base: 10;
 
 /// Base font size
 /// @type Variable
-$fontsize-base: 14;
+$fontsize-base: 20;
 
 /// Font-sizes
 /// @type Map
@@ -26,6 +26,11 @@ $font-sizes: (
     default: 1em,
     small: .75em
 );
+
+/// Rubik font family
+/// @type Variable
+/// @require {Map} $font-famillies
+$brand: 'rubik';
 
 /// Basic sans-serif font family
 /// @type Variable
@@ -47,7 +52,7 @@ $monospace: "Courier New", Courier, "Lucida Sans Typewriter",
 /// Font-famillies map tieing usage to variable names
 /// @type Map
 $font-famillies: (
-    default: $sans,
+    default: $brand,
     pageheading: $sans,
     smallprint: $sans
 );

@@ -6,10 +6,10 @@
  * Link styles
  */
 a{
-    color: color(link);
+    color: inherit;
     text-decoration: underline;
     &:hover{
-        color: color(linkactive);
+        color: inherit;
         text-decoration: none;
     }
     &[href^="tel"]{

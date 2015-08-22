@@ -2,3 +2,66 @@
  * Shame file
  * Add quick changes here, to be incorperated properly at a later point
  */
+
+.pagesection{
+    &-inner{
+        width: auto;
+        max-width: 90rem;
+        margin: auto;
+        padding: 6rem 3rem;
+        > :last-child{
+            margin-bottom: 0;
+        }
+    }
+    &-title{
+        margin: 0 0 1em;
+        font-size: 3.4rem;
+        text-align: center;
+    }
+    &-herotext{
+        margin: 0 0 .5em;
+        font-size: 4rem;
+        text-align: center;
+    }
+    &-intro{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    /**
+     * Varient: Hero
+     */
+    &--hero{
+        background-color: color('brand');
+        *{
+            color: white;
+        }
+    }
+
+    /**
+     * Color bgs after hero section
+     */
+    &--hero{
+        ~ :nth-child(even){
+            background-color: #f2f2f2;
+        }
+    }
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: .7em 1em;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+    text-decoration: none;
+    cursor: pointer;
+    &--cta{
+        color: white;
+        background-color: #49c014;
+    }
+}
+
