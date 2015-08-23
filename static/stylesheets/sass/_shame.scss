@@ -18,6 +18,9 @@ blockquote{
         max-width: 90rem;
         margin: auto;
         padding: 6rem 3rem;
+        > :first-child{
+            margin-top: 0;
+        }
         > :last-child{
             margin-bottom: 0;
         }
@@ -168,6 +171,9 @@ form{
 .site-header{
     background-color: color('brand');
     &-inner{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
         position: relative;
         width: auto;
         max-width: 90rem;
@@ -176,7 +182,7 @@ form{
     }
     @at-root{
         .site-logo{
-            margin: auto;
+            margin: 0;
             color: white;
             font-size: 4rem;
             font-weight: bold;
@@ -187,9 +193,9 @@ form{
             }
         }
         .site-nav{
-            position: absolute;
-            top: 3.5rem;
-            right: 3rem;
+            // position: absolute;
+            // top: 3.5rem;
+            // right: 3rem;
             li{
                 display: inline;
             }
@@ -199,6 +205,7 @@ form{
                 color: white;
                 text-decoration: none;
                 &[data-title="Login"]{
+                    margin-left: 1em;
                     border-radius: 1rem;
                     background-color: darken( color(brand),10% );
                 }

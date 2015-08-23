@@ -63,9 +63,17 @@
         "age"
     ],
     "nav" : {
+        "Home" : {
+            "title": "Home",
+            "url" : "./"
+        },
+        "Club" : {
+            "title": "Club",
+            "url" : "./club.html"
+        },
         "Login" : {
             "title": "Login",
-            "url" : "/"
+            "url" : "./"
         }
     }
 }

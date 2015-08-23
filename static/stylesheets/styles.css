@@ -1479,6 +1479,10 @@ blockquote cite {
 	padding: 6rem 3rem;
 }
 
+.pagesection-inner > :first-child {
+	margin-top: 0;
+}
+
 .pagesection-inner > :last-child {
 	margin-bottom: 0;
 }
@@ -1659,6 +1663,17 @@ form input {
 }
 
 .site-header-inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	position: relative;
 	width: auto;
 	max-width: 90rem;
@@ -1667,7 +1682,7 @@ form input {
 }
 
 .site-logo {
-	margin: auto;
+	margin: 0;
 	color: white;
 	font-size: 4rem;
 	font-weight: bold;
@@ -1677,12 +1692,6 @@ form input {
 
 .site-logo a {
 	text-decoration: none;
-}
-
-.site-nav {
-	position: absolute;
-	top: 3.5rem;
-	right: 3rem;
 }
 
 .site-nav li {
@@ -1697,6 +1706,7 @@ form input {
 }
 
 .site-nav a[data-title="Login"] {
+	margin-left: 1em;
 	border-radius: 1rem;
 	background-color: #781eab;
 }
