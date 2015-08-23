@@ -51,11 +51,19 @@ blockquote{
         }
     }
 
-    /**
-     * Color bgs after hero section
-     */
-    &--hero{
+}
+
+.view-home{
+    .pagesection--hero{
         ~ :nth-child(even){
+            background-color: #f2f2f2;
+        }
+    }
+}
+
+.default{
+    .site-header{
+        ~ .pagesection:nth-child(odd){
             background-color: #f2f2f2;
         }
     }
@@ -96,6 +104,8 @@ blockquote{
                 max-width: 20rem;
                 border-radius: 100%;
                 background-color: #999;
+                background-repeat: no-repeat;
+                background-position: center center;
             }
             &--quote{
                 flex-basis: 30rem;
@@ -132,6 +142,20 @@ blockquote{
             color: color('action');
             text-align: center;
         }
+    }
+}
+
+form{
+    margin-bottom: 3rem;
+    ul{
+        margin: 0;
+        list-style: none;
+    }
+    li{
+        margin-bottom: 1em;
+    }
+    input{
+        border-radius: .5rem;
     }
 }
 

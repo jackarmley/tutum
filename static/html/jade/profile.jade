@@ -1,0 +1,16 @@
+extend templates/master
+
+block pagecontent
+    +section('Your profile')
+        p.pagesection-intro.
+            Intro
+        form
+            ul
+                -each val, index in locals.profile
+                    li
+                        label= val
+                        input(type="text")
+        .center
+            a.btn.btn--cta(href="") Save your profile
+
+

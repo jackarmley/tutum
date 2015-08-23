@@ -1,5 +1,8 @@
 extend templates/master
 
+block vars
+    -var viewclass = 'view-home';
+
 block pagecontent
     +section(class='pagesection--hero')
         p.pagesection-herotext.

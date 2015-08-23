@@ -1,0 +1,16 @@
+extend templates/master
+
+block pagecontent
+    +section('Get to know us')
+        p.pagesection-intro.
+            Let's build your profile! Here's the
+            ways you can get in-touch with us.
+        .cards
+            -each val, index in locals.contact
+                .card
+                    figure.card-image(style="background-image:url('#{val.image}');background-color:#9626d6;")
+                    p= val.desc
+        .center
+            a.btn.btn--cta(href="./profile.html") Next step
+
+

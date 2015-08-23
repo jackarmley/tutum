@@ -16,10 +16,10 @@
             "desc" : "Full assistance in Insurance claims"
         },
         {
-            "desc" : "Free online guides"
+            "desc" : "Free online guides and free online courses on how to Travel Safe"
         },
         {
-            "desc" : "Free online Courses  on “How to Travel Safe"
+            "desc" : "We introduce you to helpful products that can help make life easier"
         }
     ],
     "whatsnext" : [
@@ -33,6 +33,20 @@
             "desc" : "We then send you all your insurance details and make sure you understand"
         }
     ],
+    "contact" : [
+        {
+            "desc" : "Call us on 0330 12345678",
+            "image" : "../images/contact-phone.png"
+        },
+        {
+            "desc" : "Chat with us online",
+            "image" : "../images/contact-chat.png"
+        },
+        {
+            "desc" : "Get in touch via email",
+            "image" : "../images/contact-email.png"
+        }
+    ],
     "testimonials" : [
         {
             "quote" : "So easy to use, I never felt patronised and Tutum gave me independence",
@@ -42,6 +56,11 @@
             "quote" : "My son was away so I was left to book everything myself, Tutum took me through everything",
             "cite" : "Harry, Barking"
         }
+    ],
+    "profile" : [
+        "name",
+        "email",
+        "age"
     ],
     "nav" : {
         "Login" : {
