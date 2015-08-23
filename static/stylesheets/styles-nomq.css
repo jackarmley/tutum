@@ -1701,6 +1701,17 @@ form input {
 	background-color: #781eab;
 }
 
+.site-footer {
+	padding: 3rem;
+	background-color: #9626d6;
+	text-align: center;
+}
+
+.site-footer p {
+	margin-bottom: 0;
+	color: white;
+}
+
 /**
  * IE8-specific layout fixes
  * @author Jack Armley

@@ -10,10 +10,12 @@ block pagecontent
         .center
             a.btn.btn--cta(href="#content") Find out more ▼
     +section('What\'s Tutum?')(id="content")
-        p.pagesection-intro.
-            We know how stressful and invasive it is to buy travel insurance as
-            we get older. We take on the leg work so you can enjoy your trip.
-            Also, we never take money from insurance companies: We're
+        p.pagesection-intro
+            | We know how stressful and invasive it is to buy medical travel insurance.
+            br
+            | We take on the leg work so you can enjoy your trip.
+            br
+            | We never take money from insurance companies: We're
             always on your side!
         .cards
             -each val, index in locals.process
@@ -37,7 +39,8 @@ block pagecontent
                     cite= val.cite
     +section('Pricing')
         p.pagesection-intro.
-            We charge a fixed price, and once you've used our
+            Pay only when you've booked medical insurance for
+            your first trip with us. Once you've used our
             service your online profile is yours to keep, to use
             for future trips.
         .center

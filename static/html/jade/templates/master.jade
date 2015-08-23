@@ -21,5 +21,7 @@ html(lang="en-gb")
     body(class=viewclass)
         include ../partials/header
         block pagecontent
+        footer(class="site-footer" role="contentinfo" aria-label="Page footer")
+            p We're tutum. It's latin for 'safe'.
         //- JavaScript libraries and UX based code
         script(data-main='../scripts/app', src='../libs/requirejs/require.js')
