@@ -1457,6 +1457,16 @@ head {
  * Add quick changes here, to be incorperated properly at a later point
  */
 
+blockquote {
+	font-style: italic;
+	font-weight: 300;
+}
+
+blockquote cite {
+	font-style: normal;
+	font-weight: 500;
+}
+
 .pagesection { /**
    * Varient: Hero
    */ /**
@@ -1488,7 +1498,12 @@ head {
 }
 
 .pagesection-intro {
+	margin-bottom: 1.5em;
 	font-size: 2.4rem;
+	text-align: center;
+}
+
+.pagesection-intro ~ p {
 	text-align: center;
 }
 
@@ -1522,11 +1537,104 @@ head {
 	background-color: #49c014;
 }
 
+.btn--cta:hover {
+	color: white;
+}
+
+.cards {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.card {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 1 20rem;
+	-ms-flex: 0 1 20rem;
+	flex: 0 1 20rem;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.card-image {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	max-width: 20rem;
+	border-radius: 100%;
+	background-color: #999;
+}
+
+.card-image:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card--quote {
+	-webkit-flex-basis: 30rem;
+	-ms-flex-preferred-size: 30rem;
+	flex-basis: 30rem;
+}
+
+.price {
+	margin-bottom: 3rem;
+	font-style: italic;
+	vertical-align: center;
+}
+
+.price span {
+	font-size: 7rem;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.checklist {
+	max-width: 30rem;
+	margin: 0 auto 1em;
+}
+
+.checklist li {
+	margin-bottom: 1em;
+	list-style: none;
+}
+
+.checklist li:before {
+	content: '✔';
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	margin-right: .5rem;
+	border: .2rem solid currentColor;
+	border-radius: 100%;
+	color: #49c014;
+	text-align: center;
+}
+
+/**
+ * Layout
+ */
+
 .site-header {
 	background-color: #9626d6;
 }
 
 .site-header-inner {
+	position: relative;
 	width: auto;
 	max-width: 90rem;
 	margin: auto;
@@ -1540,5 +1648,31 @@ head {
 	font-weight: bold;
 	text-transform: lowercase;
 	text-align: center;
+}
+
+.site-logo a {
+	text-decoration: none;
+}
+
+.site-nav {
+	position: absolute;
+	top: 3.5rem;
+	right: 0;
+}
+
+.site-nav li {
+	display: inline;
+}
+
+.site-nav a {
+	display: inline-block;
+	padding: .25em .5em;
+	color: white;
+	text-decoration: none;
+}
+
+.site-nav a[data-title="Login"] {
+	border-radius: 1rem;
+	background-color: #781eab;
 }
 

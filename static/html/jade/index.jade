@@ -1,13 +1,5 @@
 extend templates/master
 
-
-mixin section(title)
-    section.pagesection&attributes(attributes)
-        .pagesection-inner
-            -if(title)
-                h1.pagesection-title= title
-            block
-
 block pagecontent
     +section(class='pagesection--hero')
         p.pagesection-herotext.
@@ -18,28 +10,41 @@ block pagecontent
         p.pagesection-intro.
             We know how stressful and invasive it is to buy travel insurance as
             we get older. We take on the leg work so you can enjoy your trip.
-            Stick with us If you’re tired of noisy price comparision sites and
-            being rejected!
+            Also, we never take money from insurance companies: We're
+            always on your side!
+        .cards
+            -each val, index in locals.process
+                .card
+                    figure.card-image
+                    p= val.desc
+    +section('Tutum club')
+        p.pagesection-intro.
+            Be Member of Tutum Club. You get 5% discount for
+            every friend you introduce to us
+        .cards
+            -each val, index in locals.tutumclub
+                .card
+                    figure.card-image
+                    p= val.desc
     +section('What our clients said')
-        blockquote
-            p.
-                So easy to use, I never felt patronised
-                and Tutum gave me independence
-            cite Mary, Sheffield
-        blockquote
-            p.
-                My son was away so I was left to book everything
-                myself, Tutum took me through everything
-            cite Harry, Barking
+        .cards
+            -each val, index in locals.testimonials
+                blockquote.card.card--quote
+                    p= val.quote
+                    cite= val.cite
     +section('Pricing')
         p.pagesection-intro.
-            Tutum is an all inclusive service that gaurentees you insurance
-            for when you travel or your money back, we’re upfront about costs
-            and never hide anything in the small print
-        p.price
-            | Just
-            span 20
+            We charge a fixed price, and once you've used our
+            service your online profile is yours to keep, to use
+            for future trips.
         .center
-            a.btn.btn--cta Get started
+            p.price
+                | Just
+                | &nbsp;
+                span £5
+                | &nbsp;
+                | per year
+        .center
+            a.btn.btn--cta(href="./checklist.html") Get started
 
 

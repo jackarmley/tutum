@@ -3,6 +3,15 @@
  * Add quick changes here, to be incorperated properly at a later point
  */
 
+blockquote{
+    font-style: italic;
+    font-weight: 300;
+    cite{
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
 .pagesection{
     &-inner{
         width: auto;
@@ -24,8 +33,12 @@
         text-align: center;
     }
     &-intro{
+        margin-bottom: 1.5em;
         font-size: 2.4rem;
         text-align: center;
+        ~ p{
+            text-align: center;
+        }
     }
 
     /**
@@ -61,13 +74,74 @@
     cursor: pointer;
     &--cta{
         color: white;
-        background-color: #49c014;
+        background-color: color('action');
+        &:hover{
+            color: white;
+        }
     }
 }
 
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @at-root{
+        .card{
+            flex: 0 1 20rem;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            &-image{
+                @include propelem('&:before',1 1);
+                max-width: 20rem;
+                border-radius: 100%;
+                background-color: #999;
+            }
+            &--quote{
+                flex-basis: 30rem;
+            }
+        }
+    }
+}
+
+.price{
+    margin-bottom: 3rem;
+    font-style: italic;
+    vertical-align: center;
+    span{
+        font-size: 7rem;
+        font-style: normal;
+        font-weight: 300;
+    }
+}
+
+.checklist{
+    max-width: 30rem;
+    margin: 0 auto 1em;
+    li{
+        margin-bottom: 1em;
+        list-style: none;
+        &:before{
+            content:'✔';
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: .5rem;
+            border: .2rem solid currentColor;
+            border-radius: 100%;
+            color: color('action');
+            text-align: center;
+        }
+    }
+}
+
+/**
+ * Layout
+ */
 .site-header{
     background-color: color('brand');
     &-inner{
+        position: relative;
         width: auto;
         max-width: 90rem;
         margin: auto;
@@ -81,6 +155,27 @@
             font-weight: bold;
             text-transform: lowercase;
             text-align: center;
+            a{
+                text-decoration: none;
+            }
+        }
+        .site-nav{
+            position: absolute;
+            top: 3.5rem;
+            right: 0;
+            li{
+                display: inline;
+            }
+            a{
+                display: inline-block;
+                padding: .25em .5em;
+                color: white;
+                text-decoration: none;
+                &[data-title="Login"]{
+                    border-radius: 1rem;
+                    background-color: darken( color(brand),10% );
+                }
+            }
         }
     }
 }

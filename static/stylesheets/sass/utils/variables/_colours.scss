@@ -24,6 +24,10 @@ $red: #aa3025;
 /// @type Variable
 $tutum: #9626d6;
 
+/// Action
+/// @type Variable
+$action: #49c014;
+
 // A really different color,
 // explicitly for the ie8
 // support message
@@ -40,6 +44,7 @@ $colors: (
     highlight: $yellow,
     link: $red,
     brand: $tutum,
+    action: $action,
     linkactive:lighten($red,10%),
     supportmessage: $supportmessage
 );

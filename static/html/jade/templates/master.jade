@@ -1,6 +1,13 @@
 block vars
     -var viewclass = 'default';
 
+mixin section(title)
+    section.pagesection&attributes(attributes)
+        .pagesection-inner
+            -if(title)
+                h1.pagesection-title= title
+            block
+
 doctype html
 html(lang="en-gb")
     head

@@ -1,0 +1,21 @@
+extend templates/master
+
+block pagecontent
+    +section('Pretravel checklist')
+        p.pagesection-intro.
+            Tutum is an all inclusive service that gaurentees you insurance for when you travel or your money back, we’re upfront about costs and never hide anything in the small print
+        ul.checklist
+            -for(i=0;i<10;i++)
+                li Lorem ipsum dolor sit amet
+    +section('What\'s next?')
+        p.pagesection-intro.
+            Intro text
+        .cards
+            -each val, index in locals.whatsnext
+                .card
+                    figure.card-image
+                    p= val.desc
+        .center
+            a.btn.btn--cta(href="") Next step
+
+

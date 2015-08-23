@@ -1,23 +1,52 @@
 {
     "title" : "Tutum",
-    "sitenavlinks": {
-        "Home" : {
-            "title": "Home",
-            "url" : "/"
+    "process" : [
+        {
+            "desc" : "We get to know you, you get to know us"
         },
-        "About" : {
-            "Title": "About",
-            "url" : "about.html",
-            "subnav" : {
-                "team" : {
-                    "title" : "The team",
-                    "url" : "team.html"
-                },
-                "studio": {
-                    "title" : "Our studio",
-                    "url" : "studio.html"
-                }
-            }
+        {
+            "desc" : "We help build your insurance profile"
+        },
+        {
+            "desc" : "We guide you through what suits your needs"
+        }
+    ],
+    "tutumclub" : [
+        {
+            "desc" : "Full assistance in Insurance claims"
+        },
+        {
+            "desc" : "Free online guides"
+        },
+        {
+            "desc" : "Free online Courses  on “How to Travel Safe"
+        }
+    ],
+    "whatsnext" : [
+        {
+            "desc" : "Once you know all your details it will take about 30 minutes to complete your profile"
+        },
+        {
+            "desc" : "We’ll talk to you in more detail to get a sense of what’s best for you"
+        },
+        {
+            "desc" : "We then send you all your insurance details and make sure you understand"
+        }
+    ],
+    "testimonials" : [
+        {
+            "quote" : "So easy to use, I never felt patronised and Tutum gave me independence",
+            "cite" : "Mary, Sheffield"
+        },
+        {
+            "quote" : "My son was away so I was left to book everything myself, Tutum took me through everything",
+            "cite" : "Harry, Barking"
+        }
+    ],
+    "nav" : {
+        "Login" : {
+            "title": "Login",
+            "url" : "/"
         }
     }
 }

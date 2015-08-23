@@ -11,7 +11,12 @@
   <body class="default">
     <header role="banner" aria-label="Site header" class="site-header">
       <div class="site-header-inner">
-        <h1 class="site-logo">Tutum</h1>
+        <h1 class="site-logo"><a href="./">Tutum</a></h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="/" data-title="Login">Login</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <section class="pagesection pagesection--hero">
@@ -26,40 +31,79 @@
         <p class="pagesection-intro">
           We know how stressful and invasive it is to buy travel insurance as
           we get older. We take on the leg work so you can enjoy your trip.
-          Stick with us If you’re tired of noisy price comparision sites and
-          being rejected!
+          Also, we never take money from insurance companies: We're
+          always on your side!
         </p>
+        <div class="cards">
+          <div class="card">
+            <figure class="card-image"></figure>
+            <p>We get to know you, you get to know us</p>
+          </div>
+          <div class="card">
+            <figure class="card-image"></figure>
+            <p>We help build your insurance profile</p>
+          </div>
+          <div class="card">
+            <figure class="card-image"></figure>
+            <p>We guide you through what suits your needs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pagesection">
+      <div class="pagesection-inner">
+        <h1 class="pagesection-title">Tutum club</h1>
+        <p class="pagesection-intro">
+          Be Member of Tutum Club. You get 5% discount for
+          every friend you introduce to us
+        </p>
+        <div class="cards">
+          <div class="card">
+            <figure class="card-image"></figure>
+            <p>Full assistance in Insurance claims</p>
+          </div>
+          <div class="card">
+            <figure class="card-image"></figure>
+            <p>Free online guides</p>
+          </div>
+          <div class="card">
+            <figure class="card-image"></figure>
+            <p>Free online Courses  on “How to Travel Safe</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="pagesection">
       <div class="pagesection-inner">
         <h1 class="pagesection-title">What our clients said</h1>
-        <blockquote>
-          <p>
-            So easy to use, I never felt patronised
-            and Tutum gave me independence
-          </p>
-          <cite>Mary, Sheffield</cite>
-        </blockquote>
-        <blockquote>
-          <p>
-            My son was away so I was left to book everything
-            myself, Tutum took me through everything
-          </p>
-          <cite>Harry, Barking</cite>
-        </blockquote>
+        <div class="cards">
+          <blockquote class="card card--quote">
+            <p>So easy to use, I never felt patronised and Tutum gave me independence</p>
+            <cite>Mary, Sheffield</cite>
+          </blockquote>
+          <blockquote class="card card--quote">
+            <p>My son was away so I was left to book everything myself, Tutum took me through everything</p>
+            <cite>Harry, Barking</cite>
+          </blockquote>
+        </div>
       </div>
     </section>
     <section class="pagesection">
       <div class="pagesection-inner">
         <h1 class="pagesection-title">Pricing</h1>
         <p class="pagesection-intro">
-          Tutum is an all inclusive service that gaurentees you insurance
-          for when you travel or your money back, we’re upfront about costs
-          and never hide anything in the small print
+          We charge a fixed price, and once you've used our
+          service your online profile is yours to keep, to use
+          for future trips.
         </p>
-        <p class="price">Just<span>20</span></p>
-        <div class="center"><a class="btn btn--cta">Get started</a></div>
+        <div class="center">
+          <p class="price">
+            Just
+            &nbsp;<span>£5</span>&nbsp;
+            per year
+          </p>
+        </div>
+        <div class="center"><a href="./checklist.html" class="btn btn--cta">Get started</a></div>
       </div>
     </section>
     <script data-main="../scripts/app" src="../libs/requirejs/require.js"></script>
