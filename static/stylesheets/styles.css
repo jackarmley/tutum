@@ -1642,6 +1642,10 @@ form li {
 	margin-bottom: 1em;
 }
 
+form label {
+	text-transform: capitalize;
+}
+
 form input {
 	border-radius: .5rem;
 }
