@@ -1,5 +1,8 @@
 extend templates/master
 
+block header
+    include ./partials/header-loggedin
+
 block pagecontent
     +section('Tutum club')
         p.pagesection-intro.

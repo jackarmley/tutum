@@ -1,0 +1,19 @@
+extend templates/master
+
+block header
+    include ./partials/header-loggedin
+
+block pagecontent
+    +section('Welcome back, Molly')
+        p.pagesection-intro.
+            Your profile&hellip;
+        form
+            ul
+                -each val, index in locals.profile
+                    li #{index} : #{val}
+        .center
+            a.btn.btn--cta(href="") Edit
+    +section('Latest from the club')
+        p.pagesection-intro.
+            The latest news and tips&hellip;
+

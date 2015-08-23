@@ -19,7 +19,8 @@ html(lang="en-gb")
         //- Important early load external scripts
         script(src='../libs/modernizr/modernizr.min.js')
     body(class=viewclass)
-        include ../partials/header
+        block header
+            include ../partials/header
         block pagecontent
         footer(class="site-footer" role="contentinfo" aria-label="Page footer")
             p We're tutum. It's latin for 'safe'.

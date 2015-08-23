@@ -57,11 +57,11 @@
             "cite" : "Harry, Barking"
         }
     ],
-    "profile" : [
-        "name",
-        "email",
-        "age"
-    ],
+    "profile" : {
+        "name" : "Molly",
+        "email" : "molly@gmail.com",
+        "age" : 60
+    },
     "nav" : {
         "Home" : {
             "title": "Home",
@@ -69,11 +69,12 @@
         },
         "Club" : {
             "title": "Club",
-            "url" : "./club.html"
+            "url" : "./club.html",
+            "private" : true
         },
         "Login" : {
             "title": "Login",
-            "url" : "./"
+            "url" : "./loggedin.html"
         }
     }
 }

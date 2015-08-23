@@ -4,4 +4,5 @@ header.site-header(role="banner" aria-label="Site header")
         nav.site-nav
             ul
                 -each val, index in locals.nav
-                    li: a(href=val.url data-title=val.title)= val.title
+                    if(!val.private)
+                        li: a(href=val.url data-title=val.title)= val.title
